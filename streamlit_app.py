@@ -17,7 +17,7 @@ if st.button("カウント"):
     document_length = len(document_text)
 
     st.write(f"文章の総文字数: {document_length}")
-    st.write("キーワードの出現回数:")
+    st.write("共起語の出現回数:")
     for rank, (keyword, count) in enumerate(sorted_text_frequency, start=1):
         st.write(f"{rank}. {keyword}: {count}")
 
